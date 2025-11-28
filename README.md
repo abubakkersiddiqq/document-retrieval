@@ -24,3 +24,8 @@ It combines embeddings, vector search, fuzzy matching, and CSV processing into o
 - chromadb  
 - thefuzz
 
+---
+### Example Output
+
+![Search Result](https://github.com/abubakkersiddiqq/documentretrieval/blob/d443516775897ca871bfb1e95a30297ba6dbde48/output1.png)
+
