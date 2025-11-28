@@ -1,13 +1,26 @@
-Document Retrieval System (CSV Semantic Search)
+# Document Retrieval
 
-A complete, end-to-end document retrieval pipeline built using:
+This project is a complete **CSV-based document retrieval system** that uses semantic search to find the most relevant rows based on a natural-language query.  
+It combines embeddings, vector search, fuzzy matching, and CSV processing into one clean pipeline.
 
-Pandas for CSV loading
+---
 
-Sentence Transformers for generating embeddings
+## Features
 
-ChromaDB as a vector database
+- **CSV Loading:** Reads and processes large CSV files using `pandas`.  
+- **Column Detection:** Uses fuzzy matching (`thefuzz`) to identify which column matches the user's query.  
+- **Semantic Embeddings:** Generates vector embeddings using Sentence Transformers (`all-MiniLM-L6-v2`).  
+- **Vector Database:** Stores and retrieves embeddings using ChromaDB.  
+- **Full Retrieval Pipeline:**  
+  _Query → Column Match → Embed → Vector Search → Result_
 
-TheFuzz for column selection via fuzzy matching
+---
 
-This project loads a CSV file, converts its rows into embeddings, stores them in ChromaDB, and retrieves semantically similar entries based on natural language queries.
+## Tech Stack
+
+- Python  
+- pandas  
+- sentence-transformers  
+- chromadb  
+- thefuzz
+
